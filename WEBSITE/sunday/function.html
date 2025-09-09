@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <div class="element"></div>
+    <script class="js">
+        function thisFunc(){
+
+        }
+        window.thisFunc=()=>{
+
+        }
+       
+        let x=['ronaldo','messi','neymar'];
+       x.forEach((data)=>{
+        alert(data)
+       })
+        document.querySelector('div').innerText='<button>click me</button>';
+        function MyFunc(str){
+         try{
+       
+            let vowels=0;
+            let v=['a','e','i','o','u'];
+            v.forEach((data)=>{
+                if(str.includes(data)){
+                    vowels++;
+                }
+            });
+          document.querySelector('h1').innerHTML=vowels;
+         
+
+         }catch(error){
+            alert(error.stack);
+         }
+        }
+        MyFunc('orange');
+    </script>
+</body>
+</html>

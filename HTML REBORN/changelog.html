@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog</title>
+    <style>
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: relative;
+
+        }
+
+        .flex.container::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 3px solid black;
+            border-radius: 50%;
+            top: 8px;
+            left: 957px;
+
+        }
+
+
+        .first.container::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 3px solid black;
+            border-radius: 50%;
+            top: 44px;
+            left: 957px;
+        }
+
+        .second.container::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 3px solid black;
+            border-radius: 50%;
+            top: 78px;
+            left: 957px;
+        }
+
+        .third.container::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 3px solid black;
+            border-radius: 50%;
+            top: 108px;
+            left: 957px;
+        }
+
+        .fourth.container::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 3px solid black;
+            border-radius: 50%;
+            top: 148px;
+            left: 957px;
+        }
+
+        .fifth.container::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 3px solid black;
+            border-radius: 50%;
+            top: 188px;
+            left: 957px;
+        }
+
+
+
+
+
+
+
+
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            top: -3px;
+            bottom: -200px;
+            width: 10px;
+            background-color: gray;
+            left: 50%;
+
+        }
+
+        .date {
+            right: 200px;
+        }
+
+        footer>a {
+            display: flex;
+            flex-direction: row;
+            justify-self: center;
+            color: black;
+            border: 6px solid black;
+            border-radius: 3px;
+            left: 50%;
+        }
+
+        @media (max-width:600px) {
+            .date {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex container">
+        <!--when using grid for timeline,timeline should come first and container width should be 50%-->
+
+        <div class="timeline"></div>
+        <div class="content">
+            <div class="Date">
+                September 3,2024
+            </div>
+            frontend projeect roadmap
+        </div>
+    </div>
+    <br>
+    <div class="first container">
+        <div class="content">
+            <div class="date">
+                August 28,2024
+            </div>
+            Build your learning habits with learning streaks
+        </div>
+    </div>
+    <br>
+
+    <div class="second container">
+
+
+        <div class="content">
+            <div class="Date">
+                August 25,2024
+            </div>
+            Git and Github Roadmap
+        </div>
+        <br>
+
+        <div class="third container">
+
+            <div class="content">
+                <div class="Date">
+                    August 22,2024
+                </div>
+                Submit your project solution and get feedback
+            </div>
+            <br>
+
+            <div class="fourth container">
+
+                <div class="content">
+                    <div class="Date">
+                        August 15,2024
+                    </div>
+                    Backend project ideas
+                </div>
+                <br>
+                <div class="fifth container">
+
+                    <div class="content">
+                        <div class="Date">
+                            August 10,2024
+                        </div>
+                        Redis roadmap
+                    </div>
+                    <br>
+                    <footer>
+                        <a href="#">visit complete changelog</a>
+
+                    </footer>
+</body>
+
+</html>

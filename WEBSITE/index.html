@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myH1"></h1>
+    <label for="myH2">digit</label>
+    <input type="Number" id="myH2">
+    <button onclick="solution()">submit</button>
+    <script>
+   
+    
+    
+    function solution() { 
+         const PI = 3.14159
+  let radius=  document.getElementById("myH2").value;
+    radius = Number(radius);
+   let  circumference = Math.floor( 2 *Math.PI * radius);
+    document.getElementById("myH1").textContent = circumference;
+   /* document.getElementById("myH1").textContent = circumference;
+   radius = document.getElementById("myH2").value;
+    circumference =  PI * radius * 2; */
+    
+}
+</script>
+</body>
+</html>

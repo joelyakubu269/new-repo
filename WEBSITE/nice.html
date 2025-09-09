@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Circumference Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .calculator {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            padding: 15px;
+            background-color: #e8f5e8;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+            color: #2e7d32;
+        }
+
+        .formula {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Circle Circumference Calculator</h1>
+        
+        <div class="input-group">
+            <label for="radius">Enter Radius:</label>
+            <input type="number" id="radius" placeholder="Enter radius value" step="any" min="0">
+        </div>
+
+        <button onclick="calculateCircumference()">Calculate Circumference</button>
+
+        <div class="result" id="result">
+            Result will appear here
+        </div>
+
+        <div class="formula">
+            Formula: C = 2 × π × r (where π ≈ 3.14159)
+        </div>
+    </div>
+
+    <script>
+        function calculateCircumference() {
+            // Get the radius value from input
+            const radiusInput = document.getElementById('radius');
+            const radius = parseFloat(radiusInput.value);
+            
+            // Get the result element
+            const resultElement = document.getElementById('result');
+            
+            // Validate input
+            if (isNaN(radius) || radius < 0) {
+                resultElement.innerHTML = 'Please enter a valid positive number for radius!';
+                resultElement.style.backgroundColor = '#ffebee';
+                resultElement.style.color = '#c62828';
+                return;
+            }
+            
+            // Calculate circumference using formula: C = 2 * π * r
+            const circumference = 2 * Math.PI * radius;
+            
+            // Display the result with 2 decimal places
+            resultElement.innerHTML = `
+                <strong>Circumference:</strong> ${circumference.toFixed(2)} units<br>
+                <small>Radius: ${radius} units | π: ${Math.PI.toFixed(5)}</small>
+            `;
+            
+            // Reset result styling
+            resultElement.style.backgroundColor = '#e8f5e8';
+            resultElement.style.color = '#2e7d32';
+        }
+
+        // Add event listener for Enter key
+        document.getElementById('radius').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                calculateCircumference();
+            }
+        });
+    </script>
+</body>
+</html>
+const PI = 3.1459;
+let radius;
+    let circumference;
+radius= Number(radius)
+function soluton() {
+    document.getElementById("H1").textContent = circumference;
+   radius = document.getElementById("P1").value;
+    circumference = PI * radius * 2;
+}

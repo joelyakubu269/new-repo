@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradde checker</title>
+    <style>
+        div{
+           display: block; 
+           left: 100px;
+           padding: auto;
+        }
+        h2{
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label{
+           font-size: 2rem;
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <h2>check your grades</h2>
+    <br>
+    <div>
+    <input type="radio" id="radio" name="grade">
+    <label for="radio">80-100</label>
+    </div>
+        <div>
+    <input type="radio" id="badio" name="grade">
+    <label for="radio">70-89</label>
+    </div>
+    <div>
+    <input type="radio" id="cadio" name="grade">
+    <label for="radio">60-69</label>
+    </div>
+    <div>
+    <input type="radio" id="dadio" name="grade">
+    <label for="radio">50-59</label>
+    </div>
+    <div>
+    <input type="radio" id="eadio" name="grade">
+    <label for="radio">0-49</label>
+    </div>
+    <h1 id="score"></h1>
+    <script>
+         function grades(){
+            if(radio.checked){
+                let A = document.getElementById("score").textContent
+                console.log(A)
+            }
+         }
+    </script>
+</body>
+</html>

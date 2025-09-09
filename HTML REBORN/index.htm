@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .timeline {
+            position: relative;
+            /* width: 1200px;*/
+            margin: 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            top: -1px;
+            bottom: -150px;
+            width: 10px;
+            background-color: grey;
+            left: 50%;
+        }
+
+        .content {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* max-width: 1200px;*/
+        }
+
+        .content::after {
+            content: '';
+            position: absolute;
+            height: 13px;
+            width: 13px;
+            border: 4px solid blue;
+            border-radius: 50%;
+            background-color: orange;
+            left: 49.6%;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="timeline">
+        <div class="content">
+            <p>September 6, 2001</p>
+            <p>born on monday</p>
+        </div>
+    </div>
+    <div class=" first container">
+        <div class="content">
+            <p>Agust 6,2002</p>
+            <p>Christend on wednesday</p>
+        </div>
+    </div>
+    <div class=" second container">
+        <div class="content">
+            <p>Agust 6,2002</p>
+            <p>Christend on wednesday</p>
+        </div>
+    </div>
+    <div class=" third container">
+        <div class="content">
+            <p>Agust 6,2002</p>
+            <p>Christend on wednesday</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

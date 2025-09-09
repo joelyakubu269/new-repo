@@ -1,0 +1,35 @@
+h1 {
+    position: relative;
+    top: 20;
+    left: 20;
+    border-radius: 20;
+    background-color: orange;
+    text-decoration: antiquewhite;
+    text-align: center;
+}
+
+p {
+    color: rgb(245, 220, 233)
+}
+
+ul {
+    border: 2px solid crimson;
+    margin: 20px;
+    padding: 30px;
+}
+
+p.error {
+    /* border: 2px dashed green; */
+    color: blue;
+
+}
+
+.success {
+    border: 2px solid crimson;
+    font-weight: 100;
+    color: aqua;
+}
+
+h2 {
+    text-decoration-color: aqua;
+}

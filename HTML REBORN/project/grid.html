@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=g, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: "header header"
+                "main aside"
+                "footer footer";
+            /* grid-template-columns: 2fr 3fr;*/
+            margin: 25px;
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 30px;
+        }
+
+        .container>header {
+            font-size: 2.5rem;
+            font-family: 'Times New Roman', Times, serif;
+            grid-area: header;
+            text-align: center;
+        }
+
+        .container>main {
+            font-size: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            grid-area: main;
+            text-align: left;
+        }
+
+        .container>aside {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem;
+            grid-area: aside;
+            text-align: right;
+        }
+
+        .container>footer {
+            font-size: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>header</header>
+        <main>main</main>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+
+</body>
+
+</html>

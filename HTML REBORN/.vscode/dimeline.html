@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=.device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            top: 0;
+            bottom: 0;
+            background-color: blue;
+            left: 58%;
+
+        }
+
+        .container {
+            position: relative;
+            padding: 10px 40px;
+            width: 50%;
+
+        }
+
+        .container.right::before {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 15px;
+            background-color: white;
+            border: 4px solid #FF9F55;
+            border-radius: 50%;
+            left: -15px;
+            z-index: 1;
+        }
+
+        .container.left::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 15px;
+            background-color: white;
+            border: 4px solid #FF9F55;
+            border-radius: 50%;
+            right: -35px;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 58%;
+        }
+
+        .content {
+            padding: 10px 40px;
+            background-color: gray;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent green;
+        }
+
+
+
+        .right::after {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent green transparent transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="timeline">
+        <div class="container right">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet culpa porro sequi distinctio
+                    eligendi omnis laboriosam odit dolorum velit.</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sapiente totam ut ex vel mollitia porro
+                    beatae dolorum ipsam culpa!</p>
+
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet culpa porro sequi distinctio
+                    eligendi omnis laboriosam odit dolorum velit.</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet culpa porro sequi distinctio
+                    eligendi omnis laboriosam odit dolorum velit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

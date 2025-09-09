@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username generator</title>
+    <style>
+        div{
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            font-family: cursive;
+            padding: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <input type="text" id="fullname" placeholder="enter your full name">
+    <button onclick="generateUsername()">Generate username</button>
+    <h1 id="username"></h1>
+    </div>
+    <script>
+        function generateUsername(){
+            let Name= document.getElementById("fullname").value
+            let Num= Math.round(Math.random() * 20)
+            let result= "@" + Name + Num
+            document.getElementById("username").textContent= result
+        }
+        let joel= "apale"
+        document.write(joel.includes(a))
+        
+    </script>
+</body>
+</html>

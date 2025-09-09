@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #textbox{
+            font-size: large;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 10px;
+        }
+        button{
+            font-size: medium;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif; 
+            background-color: rgba(34, 0, 255, 0.763);
+        }
+        button:hover{
+            background-color:  rgba(13, 0, 255, 0.43);
+        }
+    </style>
+</head>
+<body>
+         <h1 id="figure"></h1>
+    <input type="Number" id="textbox" placeholder="Enter a number">
+    <button onclick="Now()">submit</button>
+    <script>
+        function Now(){
+            const Num = Number(document.getElementById("textbox").value)
+             let result=" this number is divisible by 5"
+             let solute=" this number is not divisible by 5"
+           if(Num % 5 ==0  ) {
+           document.getElementById("figure").textContent= result
+           }else{
+             document.getElementById("figure").textContent= solute
+           }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: grey;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 0 auto;
+            width: 1200px;
+
+        }
+
+        .timeline::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            bottom: 0;
+            width: 8px;
+            background-color: white;
+            left: 50%;
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+            width: 50%
+        }
+
+        .container.left::after {
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 15px;
+            border: 3px solid blue;
+            background-color: orange;
+            border-radius: 50%;
+            z-index: 1;
+            top: -6px;
+            left: 99%;
+
+        }
+
+        .container.right::after {
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 15px;
+            border: 3px solid blue;
+            background-color: orange;
+            border-radius: 50%;
+            z-index: 1;
+            top: -6px;
+            left: -5%;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 52%;
+        }
+
+        .content {
+            padding: 5px 10px;
+            height: 10vh;
+            color: white;
+            /* border: 1px solid white;
+            border-radius: 5px;*/
+
+
+        }
+
+        @media (max-width: 600px) {
+            .timeline {
+                margin: 50px auto;
+            }
+
+            .timeline::after {
+                left: -2px;
+            }
+
+            .right {
+                left: 0;
+            }
+
+            .content {
+                padding: 10px 15px;
+                font-size: 13px;
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="timeline">
+        <div class="container left">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque suscipit temporibus modi totam
+                    provident nobis architecto officia, doloremque ipsum consectetur!</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque suscipit temporibus modi totam
+                    provident nobis architecto officia, doloremque ipsum consectetur!</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque suscipit temporibus modi totam
+                    provident nobis architecto officia, doloremque ipsum consectetur!</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque suscipit temporibus modi totam
+                    provident nobis architecto officia, doloremque ipsum consectetur!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

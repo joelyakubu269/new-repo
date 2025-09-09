@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            column-gap: 50px;
+            row-gap: 50px;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 30px;
+            font-size: large;
+            grid-auto-rows: minmax(180px, auto);
+        }
+
+        .container>div {
+            background: #3bbced;
+
+        }
+
+        .container>div:nth-child(even) {
+            background: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>cow
+
+        </div>
+        <div>monkey</div>
+        <div>tiger</div>
+        <div>panda</div>
+        <div>penguin</div>
+        <div>horse</div>
+        <div>deer</div>
+        <div>pig</div>
+        <div>sheep</div>
+        <div>elephant</div>
+        <div>dog</div>
+        <div>giraffe</div>
+        <div>bear</div>
+        <div>fox</div>
+        <div>roe</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <style>
+        div{
+            display: block;
+            left: 500px;
+            padding: 20px;
+            text-align: center;
+
+        }
+        label{
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+
+        }
+        h2{
+            text-align: center;
+            color: blue
+        }
+        h1{
+            text-align: center;
+            color: blue 
+        }
+        button{
+           font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            background-color: green; 
+        }
+    </style>
+</head>
+<body>
+    <h2> Let's play a guessing game <hr></h2>
+    <h2>enter any number above one and guess the result by putting your guess in the Game number</h2>
+    <div>
+   <label for="firstbox">Enter a random number</label>
+   <input type="Number" id="firstbox" placeholder="enter any number" value="1">
+   </div>
+   <div>
+    <br>
+   <label for="secondbox">Game number</label>
+   <input type="numbe" id="secondbox">
+   </div>
+   <div>
+    <button onclick="Game()">submit</button>
+   </div>
+   <h1 id="state"></h1> 
+   <script>
+    function Game(){
+        const PI= 3.1419;
+        let Number=document.getElementById("firstbox").value
+        let finalScore= Math.floor(Number * PI * 2)
+        let Game= document.getElementById("secondbox").value
+        if(finalScore==Game){
+            document.getElementById("state").textContent= "you are correct"
+        } else if(Game=="" || Game==String(Game)){
+                document.getElementById("state").textContent= "please enter a number" 
+        }
+            
+        
+        else{
+            document.getElementById("state").textContent= "sorry, try again" 
+        }
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML website</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: aqua;
+            text-decoration: underline;
+            text-align: centre;
+        }
+
+        header>span>p {
+            /*color: red;*/
+            text-align: centre;
+        }
+
+        header>div>p {
+            display: inline-flex
+        }
+
+        .jerry {
+            margin: 0%;
+            font-size: 2.0rem;
+        }
+
+        .bizi {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+
+        .baizi {
+            justify-self: baseline;
+            /* color: aquamarine;*/
+            text-align: centre;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .beast {
+            border-collapse: collapse;
+        }
+
+        .bold {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px 50px;
+        }
+
+        .one {
+            font-style: italic;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 5px;
+        }
+
+        .two {
+            font-style: italic;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 5px;
+        }
+
+        .three {
+            font-style: italic;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex-container">
+        <span>your name</span>
+
+        <span>
+            <p class="jerry">Frontend Developer
+            </p>
+            <p>html only with proper layout, no styling</p>
+        </span>
+        <div>
+            <p>Home /</p>
+            <p>Projects /</p>
+            <p>Articles/</p>
+            <p>Contacts</p>
+        </div>
+    </header>
+    <main class="bizi">
+
+        <table class="beast">
+            <tr>
+                <th>Projects</th>
+            </tr>
+
+            <tr>
+                <td>HTML Only Potfolio</td>
+            </tr>
+            <tr>
+                <td>Calcultor</td>
+            </tr>
+            <tr>
+                <td>Quiz App</td>
+            </tr>
+            <tr>
+                <td>Countdown</td>
+            </tr>
+            <tr>
+                <td>Product Upcoming Page</td>
+            </tr>
+        </table>
+        <span class="baizi">Work Experience
+            <br>
+            <p>Solved all the frontend projects</p>
+            <a href="#">visit my profile</a>
+            <br>
+
+            <h2>open source work</h2>
+            <br>
+            <p>contributed to 50 opensource projects</p>
+            <p>Made my own projects with 200 Gitub stars</p>
+            <br>
+            <a href="#">visit my Github profile</a>
+        </span>
+        <section>
+            <p>Education</p>
+
+            <p>Graduated with 3.76 out of 4 CGPA.Won Acme Hackathon organized 30 sessions</p>
+            <br><br>
+            <p>Courses i took:</p>
+            <ul>
+                <li>Object Oriented Programming</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligene</li>
+                <li>Human Computer Interaction</li>
+                <li>Computer Graphics</li>
+                <li>Database Management Systems</li>
+                <li>Discrete Mathematics</li>
+        </section>
+
+        </ul>
+    </main>
+    <footer class="bold">
+
+        <div class="one">
+
+            <p>Joel yakubu, was a brilliant student;always stood out with his assignments</p>
+
+            <p>Mary jane</p>
+            <p>assistant professor</p>
+        </div>
+
+        <br>
+        <div class="two">
+            <span>Joel yakubu was always active in group presentations</span>
+            <p>professor walter lewin</p>
+        </div>
+
+        <br>
+        <div class="three">
+            <p>Joel yakubu was of good behavior, complying with the institution ethics</p>
+            <p>Eric Mcginn</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
